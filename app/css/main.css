@@ -81,11 +81,16 @@ body {
     height: 100%;
     width: 100%;
     text-indent: -9999px;
+    background: url("../images/socials.png") no-repeat;
 }
-.socials .socials-link.vk {background: url("images/vk.png")}
-.socials .socials-link.tw {background: url("images/tw.png.png")}
-.socials .socials-link.fb {background: url("images/fb.png.png")}
-.socials .socials-link.gt {background: url("images/git.png.png")}
+.socials .socials-link.vk {background-position: -347px -5px;}
+.socials .socials-link.tw {background-position: -233px -5px;}
+.socials .socials-link.fb {background-position: -5px -5px;}
+.socials .socials-link.gt {background-position: -119px -5px;}
+.socials .socials-link.vk:hover {background-position: -404px -5px;}
+.socials .socials-link.tw:hover {background-position: -290px -5px;}
+.socials .socials-link.fb:hover {background-position: -62px -5px;}
+.socials .socials-link.gt:hover {background-position: -176px -5px;}
 /* Блок социальных ссылок - конец */
 
 /* Сайдбар */
@@ -128,7 +133,7 @@ body {
 /* Навигация текущий пункт меню - конец */
 
 .navigation .navigation-link {
-    font-family: 'fira_sansbook';
+    font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
     display: block;
     font-size: 20px;
     text-decoration: none;
@@ -140,6 +145,12 @@ body {
     color: #3ba8c0;
 }
 /* Навигация - конец */
+
+/*  Главная область */
+.variable-content {
+    width: 650px;
+    float: right;
+}
 
 /* Футер */
 .page-footer {
