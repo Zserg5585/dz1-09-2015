@@ -139,12 +139,77 @@ body {
     text-decoration: none;
     color: #959aa8;
     margin-left: 16px;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 .navigation .navigation-link:hover {
     color: #3ba8c0;
 }
 /* Навигация - конец */
+
+/* Контакты */
+.contacts {
+    width: 250px;
+    float: left;
+}
+.contacts-list {
+    overflow: hidden;
+    background: #3ba8c0;
+    border-radius: 4px;
+    margin-bottom: 26px;
+    font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
+    color: #eff3f7;
+    list-style: none;
+    padding-left: 10px;
+}
+.contacts-list .contacts-header {
+    font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-size: 23px;
+    text-align: left;
+    border-bottom: 2px solid #eff3f7;
+    margin-bottom: 10px;
+}
+.contacts-list .contacts-item {
+    margin-bottom: 10px;
+    float: left;
+    display: block;
+    width: inherit;
+}
+.contacts-list .contacts-item .contacts-link {
+    font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
+    display: block;
+    text-decoration: none;
+    color: #eff3f7;
+    text-align: left;
+}
+.contacts-item .contacts-link:hover {
+    text-decoration: underline;
+}
+.contacts-link.mail:before {
+    content: " ";
+    width: 21px;
+    height: 21px;
+    background: url("../images/mail.png") no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+.contacts-link.phone:before {
+    content: " ";
+    width: 21px;
+    height: 21px;
+    background: url("../images/phone.png") no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+.contacts-link.skype:before {
+    content: " ";
+    width: 21px;
+    height: 21px;
+    background: url("../images/skype.png") no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Контакты - конец */
 
 /*  Главная область */
 .variable-content {
@@ -155,7 +220,7 @@ body {
 /* Футер */
 .page-footer {
     background: #eff3f7 top center no-repeat;
-    font-family: 'fira_sanslight';
+    font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
     color: #4a545d;
 }
 .page-footer .conteiner {
@@ -178,7 +243,7 @@ body {
 .lock .lock-inner {
     display: block;
     height: 40px;
-    font-family: 'fira_sansbook';
+    font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
     font-size: 16px;
     line-height: 2.2;
     color: #4a545d;

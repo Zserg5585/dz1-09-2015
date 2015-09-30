@@ -66,3 +66,14 @@
     max-width: 218px;
 }
 /* Список анкетных данных - конец */
+.skills-list .skills-item {
+    margin-right: 6px;
+    min-width: 40px;
+    padding: 0 7px;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1.2;
+    background-color: #3ba8c0;
+    color: white;
+}
