@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <title>Главная страница</title>
+    <!-- SEO -->
+    <meta name="description" content="loftschool_homework"/>
+    <meta name="keywords" content="loftschool_homework"/>
+    <meta name="author" content="Sergii Zapolskyi"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favikon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favikon.ico" type="image/x-icon"/>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fira.css"/>
+    <!-- bower CSS -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/about-me.css"/>
+    <!-- modernizer -->
+    <script src="bower/modernizer/modernizr.js"></script>
+</head>
+<body>
+    <!-- [if lt IE 7]>
+    <p class="browsehappy">Вы используете
+    <strong>устаревший</strong> браузер.
+    Пожалуйста <a href="http://browsehappy.com/">
+    обновите</a> его.</p>
+    <![endif] -->
+
+    <div class="wrapper">
+    <div class="main-content">
+        <header class="page-header">
+            <div class="conteiner-big">
+                <a class="header-logo-link" href="#">
+                    <img class="logo-img" src="images/logo.png" alt="logo">
+                    <span class="header-logo-text">Сайт портфолио</span>
+                    </img>
+                </a>
+                <ul class="socials">
+                <li class="socials-item">
+                    <a href="http://vk.com/id11025916" target="_blank" class="socials-link vk">vk.com</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://twitter.com/serg5585" target="_blank" class="socials-link tw">twitter.com</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://www.facebook.com/profile.php?id=100005675926843" target="_blank" class="socials-link fb">facebook.com</a>
+                </li>
+                <li class="socials-item">
+                    <a href="https://github.com/Zserg5585" target="_blank" class="socials-link gt">github.com</a>
+                </li>
+                </ul>
+            </div>
+        </header>
+        <div class="conteiner">
+            <!-- Сайдбар -->
+            <aside class="sidebar">
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-item current"><a href="/" class="navigation-link">Обо мне</a></li>
+                        <li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
+                        <li class="navigation-item"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
+                    </ul>
+                </nav>
+                <!-- Контакты -->
+                <address class="contacts">
+                        <ul class="contacts-list">
+                            <li class="contacts-header">Контакты:</li>
+                            <li class="contacts-item"><a href="mailto:serg5585@gmail.com" class="contacts-link mail">serg5585@gmail.com</a></li>
+                            <li class="contacts-item"><a href="tel:+380631902763" class="contacts-link phone">+380631902763</a></li>
+                            <li class="contacts-item"><a href="skype:sergeyzap2?chat" class="contacts-link skype">Zapolskyi Sergii</a></li>
+                        </ul>
+                </address>
+            </aside>
+            <!-- Изменяемый контент -->
+        </div>
+    </div>
+    </div>
+    <footer class="page-footer">
+        <div class="conteiner">
+            <div class="lock">
+                <a class="lock-inner" href="/login.html">Войти</a>
+            </div>
+            <div class="copyright">© 2015, Это мой сайт, пожалуйста, не воруйте и не копируйте его.</div>
+        </div>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter32762405 = new Ya.Metrika({
+                            id:32762405,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/32762405" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    </footer>
+
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

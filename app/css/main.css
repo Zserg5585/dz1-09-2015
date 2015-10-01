@@ -42,6 +42,12 @@ body {
     position: relative;
     margin-bottom: 39px;
 }
+.page-header:after {
+    content: " ";
+    display: block;
+    height: 3px;
+    background: linear-gradient(to right, transparent 5%, #1e677b 50%, transparent 95%) no-repeat;
+}
 .page-header .header-logo-link {
     position: absolute;
     top: 39px;
@@ -150,6 +156,7 @@ body {
 .contacts {
     width: 250px;
     float: left;
+    margin-bottom: 26px;
 }
 .contacts-list {
     overflow: hidden;
@@ -171,8 +178,7 @@ body {
 .contacts-list .contacts-item {
     margin-bottom: 10px;
     float: left;
-    display: block;
-    width: inherit;
+    
 }
 .contacts-list .contacts-item .contacts-link {
     font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -216,12 +222,67 @@ body {
     width: 650px;
     float: right;
 }
-
+.experience {
+    list-style: none;
+}
+.education {
+    list-style: none;
+}
+.item-content-wrap.icon-work:before {
+    content: " ";
+    display: block;
+    height: 34px;
+    width: 36px;
+    background: url("../images/bag.png") no-repeat;
+    float: left;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+.item-content-wrap.icon-edu:before {
+    content: " ";
+    display: block;
+    height: 23px;
+    width: 41px;
+    background: url("../images/hat.png") no-repeat;
+    float: left;
+    padding-right: 20px;
+    margin-top: 13px;
+    
+}
+.item-content-wrap.icon-course:before {
+    content: " ";
+    display: block;
+    height: 32px;
+    width: 26px;
+    background: url("../images/doc.png") no-repeat;
+    float: left;
+    padding-right: 25px;
+    margin-top: 13px;
+    margin-left: 10px
+}
+.item-content-wrap {
+    margin-bottom: 30px;
+}
+.item-content-header {
+    color: #4a545d;
+    font: 300 17px FiraSans;
+}
+.item-content-text {
+    color: #4a545d;
+    font: 300 15px FiraSans;
+    padding-left: 60px;
+}
 /* Футер */
 .page-footer {
     background: #eff3f7 top center no-repeat;
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
     color: #4a545d;
+}
+.page-footer:before {
+    content: " ";
+    display: block;
+    height: 3px;
+    background: linear-gradient(to right, transparent 5%, #1e677b 50%, transparent 95%) no-repeat;
 }
 .page-footer .conteiner {
     padding-top: 23px;
@@ -282,3 +343,5 @@ body {
 .conteiner:after, .clearfix:after {
     clear: both;
 }
+/* Clearfix - end */
+/* Общие классы - конец */

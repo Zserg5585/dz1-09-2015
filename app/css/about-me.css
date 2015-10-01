@@ -76,4 +76,5 @@
     line-height: 1.2;
     background-color: #3ba8c0;
     color: white;
+    background: linear-gradient(to bottom, #3ba8c0 51%, #2e8ca2 52%);
 }
