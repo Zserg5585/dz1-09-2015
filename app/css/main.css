@@ -172,13 +172,14 @@ body {
     font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
     font-size: 23px;
     text-align: left;
-    border-bottom: 2px solid #eff3f7;
+    border-bottom: 2px solid white;
     margin-bottom: 10px;
 }
 .contacts-list .contacts-item {
     margin-bottom: 10px;
     float: left;
-    
+    padding-left: 30px;
+    display: block;
 }
 .contacts-list .contacts-item .contacts-link {
     font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -197,6 +198,7 @@ body {
     background: url("../images/mail.png") no-repeat;
     float: left;
     margin-right: 10px;
+    margin-top: 4px;
 }
 .contacts-link.phone:before {
     content: " ";
