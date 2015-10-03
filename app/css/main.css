@@ -110,7 +110,7 @@ body {
     overflow: hidden;
     background: #eff3f7;
     border-radius: 4px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 .navigation .navigation-list {
     list-style: none;
@@ -170,23 +170,24 @@ body {
 }
 .contacts-list .contacts-header {
     font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
-    font-size: 23px;
+    font-weight: 300;
+    font-size: 21px;
     text-align: left;
-    border-bottom: 2px solid white;
-    margin-bottom: 10px;
+    padding: 4px 10px;
 }
 .contacts-list .contacts-item {
-    margin-bottom: 10px;
-    float: left;
+    height: 40px;
     padding-left: 30px;
     display: block;
+    line-height: 40px;
 }
 .contacts-list .contacts-item .contacts-link {
-    font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-family: 'fira_sansextralight', "Lucida Grande", Lucida, Verdana, sans-serif;
     display: block;
     text-decoration: none;
     color: #eff3f7;
     text-align: left;
+    padding-left: 38px;
 }
 .contacts-item .contacts-link:hover {
     text-decoration: underline;
@@ -198,7 +199,7 @@ body {
     background: url("../images/mail.png") no-repeat;
     float: left;
     margin-right: 10px;
-    margin-top: 4px;
+    margin-top: 10px;
 }
 .contacts-link.phone:before {
     content: " ";
@@ -207,6 +208,7 @@ body {
     background: url("../images/phone.png") no-repeat;
     float: left;
     margin-right: 10px;
+    margin-top: 10px;
 }
 .contacts-link.skype:before {
     content: " ";
@@ -215,8 +217,20 @@ body {
     background: url("../images/skype.png") no-repeat;
     float: left;
     margin-right: 10px;
+    margin-top: 10px;
 }
-
+.contacts-list .contacts-item .mail {
+    background: #41B9D4;
+    margin-left: -39px;
+}
+.contacts-list .contacts-item .phone {
+    background: #48CBE8;
+    margin-left: -39px;
+}
+.contacts-list .contacts-item .skype {
+    background: #51DAF8;
+    margin-left: -39px;
+}
 /* Контакты - конец */
 
 /*  Главная область */
@@ -226,6 +240,7 @@ body {
 }
 .experience {
     list-style: none;
+
 }
 .education {
     list-style: none;
@@ -267,7 +282,7 @@ body {
 }
 .item-content-header {
     color: #4a545d;
-    font: 300 17px FiraSans;
+    font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 .item-content-text {
     color: #4a545d;
