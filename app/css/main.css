@@ -233,62 +233,6 @@ body {
 }
 /* Контакты - конец */
 
-/*  Главная область */
-.variable-content {
-    width: 650px;
-    float: right;
-}
-.experience {
-    list-style: none;
-
-}
-.education {
-    list-style: none;
-}
-.item-content-wrap.icon-work:before {
-    content: " ";
-    display: block;
-    height: 34px;
-    width: 36px;
-    background: url("../images/bag.png") no-repeat;
-    float: left;
-    margin-top: 10px;
-    padding-right: 20px;
-}
-.item-content-wrap.icon-edu:before {
-    content: " ";
-    display: block;
-    height: 23px;
-    width: 41px;
-    background: url("../images/hat.png") no-repeat;
-    float: left;
-    padding-right: 20px;
-    margin-top: 13px;
-    
-}
-.item-content-wrap.icon-course:before {
-    content: " ";
-    display: block;
-    height: 32px;
-    width: 26px;
-    background: url("../images/doc.png") no-repeat;
-    float: left;
-    padding-right: 25px;
-    margin-top: 13px;
-    margin-left: 10px
-}
-.item-content-wrap {
-    margin-bottom: 30px;
-}
-.item-content-header {
-    color: #4a545d;
-    font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
-}
-.item-content-text {
-    color: #4a545d;
-    font: 300 15px FiraSans;
-    padding-left: 60px;
-}
 /* Футер */
 .page-footer {
     background: #eff3f7 top center no-repeat;
