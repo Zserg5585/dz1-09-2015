@@ -7,27 +7,6 @@ body {
     font: normal 1em 'fira_sanslight';
     color: #4a545d;
 }
-
-/* Прибиваем Футер к низу */
-.wrapper {
-    position: relative;
-    min-height: 100%;
-    min-width: 970px;
-    height: auto !important;
-    overflow: hidden;
-}
-.wrapper:after {
-    content: " ";
-    height: 80px;
-    display: block;
-}
-.page-footer {
-    min-width: 970px;
-    height: 80px;
-    margin-top: -80px;
-}
-/* Прибиваем Футер к низу - конец */
-
 /* Шапка */
 .conteiner-big {
     max-width: 1200px;
@@ -110,7 +89,7 @@ body {
     overflow: hidden;
     background: #eff3f7;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 23px;
 }
 .navigation .navigation-list {
     list-style: none;
@@ -145,7 +124,7 @@ body {
     text-decoration: none;
     color: #959aa8;
     margin-left: 16px;
-    padding: 20px 0;
+    line-height: 72px;
 }
 .navigation .navigation-link:hover {
     color: #3ba8c0;
@@ -159,21 +138,22 @@ body {
     margin-bottom: 26px;
 }
 .contacts-list {
-    overflow: hidden;
+
     background: #3ba8c0;
     border-radius: 4px;
     margin-bottom: 26px;
+    margin-top: 0;
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
     color: #eff3f7;
     list-style: none;
-    padding-left: 10px;
+    padding: 0;
 }
 .contacts-list .contacts-header {
     font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
     font-weight: 300;
     font-size: 21px;
     text-align: left;
-    padding: 4px 10px;
+    padding: 5px 18px;
 }
 .contacts-list .contacts-item {
     height: 40px;
@@ -221,15 +201,15 @@ body {
 }
 .contacts-list .contacts-item .mail {
     background: #41B9D4;
-    margin-left: -39px;
+    margin-left: -30px;
 }
 .contacts-list .contacts-item .phone {
     background: #48CBE8;
-    margin-left: -39px;
+    margin-left: -30px;
 }
 .contacts-list .contacts-item .skype {
     background: #51DAF8;
-    margin-left: -39px;
+    margin-left: -30px;
 }
 /* Контакты - конец */
 
@@ -278,7 +258,25 @@ body {
     background: url("../images/lock-open.png") no-repeat;
 }
 /* Логин - конец */
-
+/* Прибиваем Футер к низу */
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    min-width: 970px;
+    height: auto !important;
+    overflow: hidden;
+}
+.wrapper:after {
+    content: " ";
+    height: 80px;
+    display: block;
+}
+.page-footer {
+    min-width: 970px;
+    height: 80px;
+    margin-top: -80px;
+}
+/* Прибиваем Футер к низу - конец */
 /* Футер - конец */
 
 /* Общие классы */

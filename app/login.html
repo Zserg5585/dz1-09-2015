@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/about-me.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
     <!-- modernizer -->
     <script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -31,50 +31,18 @@
 
     <div class="wrapper">
     <div class="main-content">
-        <header class="page-header">
-            <div class="conteiner-big">
-                <a class="header-logo-link" href="#">
-                    <img class="logo-img" src="images/logo.png" alt="logo">
-                    <span class="header-logo-text">Сайт портфолио</span>
-                    </img>
-                </a>
-                <ul class="socials">
-                <li class="socials-item">
-                    <a href="http://vk.com/id11025916" target="_blank" class="socials-link vk">vk.com</a>
-                </li>
-                <li class="socials-item">
-                    <a href="https://twitter.com/serg5585" target="_blank" class="socials-link tw">twitter.com</a>
-                </li>
-                <li class="socials-item">
-                    <a href="https://www.facebook.com/profile.php?id=100005675926843" target="_blank" class="socials-link fb">facebook.com</a>
-                </li>
-                <li class="socials-item">
-                    <a href="https://github.com/Zserg5585" target="_blank" class="socials-link gt">github.com</a>
-                </li>
-                </ul>
-            </div>
-        </header>
         <div class="conteiner">
-            <!-- Сайдбар -->
-            <aside class="sidebar">
-                <nav class="navigation">
-                    <ul class="navigation-list">
-                        <li class="navigation-item current"><a href="/" class="navigation-link">Обо мне</a></li>
-                        <li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
-                        <li class="navigation-item"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
-                    </ul>
-                </nav>
-                <!-- Контакты -->
-                <address class="contacts">
-                        <ul class="contacts-list">
-                            <li class="contacts-header">Контакты:</li>
-                            <li class="contacts-item"><a href="mailto:serg5585@gmail.com" class="contacts-link mail">serg5585@gmail.com</a></li>
-                            <li class="contacts-item"><a href="tel:+380631902763" class="contacts-link phone">+380631902763</a></li>
-                            <li class="contacts-item"><a href="skype:sergeyzap2?chat" class="contacts-link skype">Zapolskyi Sergii</a></li>
-                        </ul>
-                </address>
-            </aside>
-            <!-- Изменяемый контент -->
+            <form action="" class="login-form">
+                <div class="form-header">Авторизируйтесь</div>
+                <div class="dec-line"></div>
+                <div class="input-wrap">
+                    <lable for="login" class="label-log">Логин</lable>
+                    <input type="text" class="login">
+                    <lable for="pass" class="label-pass">Пароль</lable>
+                    <input type="password" class="pass">
+                    <input type="submit" class="submit">
+                </div>
+            </form>
         </div>
     </div>
     </div>

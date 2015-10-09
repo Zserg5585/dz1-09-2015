@@ -1,0 +1,79 @@
+.form-wrap {
+    width: 650px;
+    background-color: #eff3f7;
+    float: right;
+    height: 840px;
+    border-radius: 4px;
+    margin-bottom: 39px;
+    text-align: center;
+}
+.form-header {
+    background: url(../images/form-header-bg.png);
+    text-align: center;
+    line-height: 123px;
+    color: #ffffff;
+    font-size: 27px;
+}
+.dec-line {
+    height: 17px;
+    background-color: #67dffa;
+    margin-bottom: 46px;
+}
+.contact-form {
+    width: 402px;
+    height: 457px;
+    margin-left: 124px;
+}
+.form__label {
+    display: block;
+    text-align: left;
+    font-size: 19px;
+}
+.name {
+    float: left;
+    width: 192px;
+    height: 41px;
+    margin-bottom: 16px;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #48cbe8;
+}
+.email {
+    float: right;
+    width: 192px;
+    height: 41px;
+    font-size: 13px;
+}
+.message {
+    width: 400px;
+    height: 181px;
+    margin-bottom: 17px;
+}
+.captcha {
+    width: 192px;
+    height: 32px;
+    float: right;
+    margin-bottom: 47px;
+}
+.captcha-code {
+    width: 189px;
+    height: 77px;
+    float: left;
+}
+.submit {
+    width: 137px;
+    height: 31px;
+    position: relative;
+    float: left;
+    border-radius: 5px;
+    background-color: #48cbe8;
+    color: #fbfcfd;
+}
+.reset {
+    width: 125px;
+    height: 31px;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+    color: #ffffff;
+}

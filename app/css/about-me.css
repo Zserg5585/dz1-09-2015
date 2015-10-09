@@ -2,7 +2,7 @@
 .aboutbox {
     background: #eff3f7;
     border-radius: 4px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
 }
 .aboutbox .aboutbox-header {
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -10,12 +10,13 @@
     font-weight: normal;
     color: #3ba8c0;
     border-bottom: 2px solid #3ba8c0;
-    margin:0 0 13px 0;
-    padding: 14px 23px;
+    margin:0 0 20px 0;
+    line-height: 65px;
+    padding: 0 25px;
     display: inline-block;
 }
 .aboutbox-body {
-    padding-bottom: 20px;
+    padding-bottom: 23px;
 }
 /*  Главная область */
 .variable-content {
@@ -25,12 +26,20 @@
 .experience {
     list-style: none;
     padding-left: 60px;
+    margin-top: 0;
     margin-bottom: 10px;
+}
+.experience-item {
+    margin-bottom: 33px;
 }
 .education {
     list-style: none;
     padding-left: 60px;
+    margin-top: 0;
     margin-bottom: 10px;
+}
+.education-item {
+    margin-bottom: 33px;
 }
 .item-content-wrap.icon-work:before {
     content: " ";
@@ -68,18 +77,21 @@
 .item-content-header {
     color: #4a545d;
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .item-content-text {
     color: #4a545d;
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
     font-size: 14px;
-    padding-left: 60px;
+    margin-top: 0;
 }
 /* Главная область - конец */
 /* Лицо */
 .image-wrap {
     float: left;
     margin-left: 55px;
+    margin-top: 10px;
 }
 .avatar-box {
     width: 142px;
@@ -102,9 +114,10 @@
     list-style: none;
     padding: 0;
     margin-left: -20px;
+    margin-top: 0;
 }
 .worksheet-info {
-    padding-left: 30px;
+    padding-left: 25px;
     font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
     font-size: 14px;
     display: block;
@@ -112,18 +125,21 @@
     
 }
 .worksheet-item {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .worksheet-what {
     font-family: 'fira_sansmedium', "Lucida Grande", Lucida, Verdana, sans-serif;
     font-size: 16px;
     float: left;
 }
-/* Список анкетных данных - конец */
+.skills-list {
+    padding: 0;
+}
 .skills-list .skills-item {
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
     font-size: 13px;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     min-width: 40px;
     padding: 0 5px;
     display: inline-block;
@@ -134,3 +150,5 @@
     color: white;
     background: linear-gradient(to bottom, #3ba8c0 51%, #2e8ca2 52%);
 }
+
+/* Список анкетных данных - конец */
