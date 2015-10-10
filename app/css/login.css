@@ -36,7 +36,6 @@
 }
 .login {
     margin-bottom: 12px;
-    background-color: rgba(249, 126, 118, 0.33);
     width: 422px;
     height: 58px;
     border: 1px solid #f97e76;
@@ -52,7 +51,6 @@
 }
 .pass {
     margin-bottom: 34px;
-    background-color: rgba(249, 126, 118, 0.33);
     width: 422px;
     height: 58px;
     border: 1px solid #f97e76;
