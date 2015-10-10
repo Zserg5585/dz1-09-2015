@@ -1,6 +1,7 @@
 var gulp = require("gulp"),
     browserSync = require('browser-sync');
 
+
 //Сервер
 gulp.task('server', function () {
     browserSync({
