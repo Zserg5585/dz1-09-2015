@@ -115,7 +115,42 @@
                     </li>
                 </ul>
                 <div class="popup">
-
+                    <div class="form-header">Добавление проекта</div>
+                    <div class="popup__inner">
+                        <form action="" method="post" class="form">
+                            <label class="form__label">
+                                <div class="form__title">
+                                    Название проекта
+                                </div>
+                                <input type="text" name="" class="form__input-text" placeholder="Введите название">
+                            </label>
+                            <label class="form__label">
+                                <div class="form__title">
+                                    Картинка проекта
+                                </div>
+                                <div class="form__input-file">
+                                    <input type="file" name="" class="form__input-file-origin">
+                                    <div class="form__input-fake"></div>
+                                    <div class="form__input-file-icon"></div>
+                                </div>
+                            </label>
+                            <label class="form__label">
+                                <div class="form__title">
+                                    URL Проекта
+                                </div>
+                                <input type="text" name="" class="form__input-text" placeholder="Добавьте ссылку">
+                            </label>
+                            <label class="form__label">
+                                <div class="form__title">
+                                    Описание
+                                </div>
+                                <textarea name="" class="form__textarea" placeholder="Пара слов о Вашем проекте"></textarea>
+                            </label>
+                            <div class="form__submit--wrap">
+                                <input type="submit" class="form__submit" value="Добавить">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +167,7 @@
 
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="bower/bPopup/jquery.bpopup.js"></script>
-<script src="js/main.js"></script>
 <script src="js/placeholder.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

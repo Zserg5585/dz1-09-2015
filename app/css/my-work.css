@@ -74,6 +74,7 @@
     width: 181px;
     font-size: 14px;
     margin: 0;
+    overflow: hidden;
 }
 .add-pj-item {
     display: inline-block;
@@ -115,3 +116,121 @@
     margin-top: -50px;
     font-size: 14px;
 }
+/* Popup */
+.popup {
+    width: 365px;
+    height: 500px;
+    background: #eff3f7;
+    border-radius: 4px;
+    position: relative;
+}
+
+.popup__inner {
+    padding: 20px;
+}
+
+.form-header {
+    text-align: center;
+    line-height: 40px;
+    background: #3ba8c0;
+    color: #eff3f7;
+    border-bottom: 10px solid #67dffa;
+    font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.form__input-text {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #67dffa;
+    box-shadow: 0 0 1px 1px #67dffa;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__input-file {
+    font-size: 12px;
+    line-height: 16px;
+    width: 300px;
+    border: 1px solid #67dffa;
+    box-shadow: 0 0 1px 1px #67dffa;
+    background: #fff;
+    padding: 0;
+    height: 42px;
+    width: 320px;
+    position: relative;
+    cursor: text;
+}
+
+.form__input-file-origin {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.form__input-fake {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 40px;
+    line-height: 42px;
+}
+
+.form__input-file-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 280px;
+    background: url("../images/ico-add-img-pj.png") center center no-repeat;
+    cursor: pointer;
+    border-left: 2px solid #67dffa;
+}
+
+.form__textarea {
+    resize: none;
+    width: 320px;
+    height: 100px;
+    border: 1px solid #67dffa;
+    box-shadow: 0 0 1px 1px #67dffa;
+}
+
+.form__submit {
+    width: 120px;
+    background: #3ba8c0;
+    color: #eff3f7;
+    border: 1px solid #3ba8c0;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-size: 20px;
+    font-family: 'fira_sansbook', "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+.form__submit:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.form__submit--wrap {
+    text-align: center;
+}
+
+.popup {
+    display: none;
+}
+
+.popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Popup - END */

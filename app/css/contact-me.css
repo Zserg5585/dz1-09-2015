@@ -13,11 +13,8 @@
     line-height: 123px;
     color: #ffffff;
     font-size: 27px;
-}
-.dec-line {
-    height: 17px;
-    background-color: #67dffa;
     margin-bottom: 40px;
+    border-bottom: 17px solid #67dffa;
 }
 .contact-form {
     position: absolute;
@@ -80,6 +77,7 @@
     border: 1px solid #67dffa;
     border-radius: 4px;
     font-size: 13px;
+    resize: none;
 }
 .capcha-wrap {
     position: relative;
