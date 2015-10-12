@@ -43,7 +43,7 @@
     height: 35px;
     border: 1px solid #67dffa;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 13px;
   }
 .email-wrap {
     display: block;
@@ -63,7 +63,7 @@
     height: 35px;
     border: 1px solid #67dffa;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 13px;
 }
 .message-wrap {
     float: left;
@@ -79,8 +79,7 @@
     min-height: 180px;
     border: 1px solid #67dffa;
     border-radius: 4px;
-    margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 .capcha-wrap {
     position: relative;
@@ -107,7 +106,7 @@
 .captcha {
     display: inline-block;
     float: right;
-    font-size: 12px;
+    font-size: 13px;
     width: 190px;
     height: 30px;
     border-radius: 5px;

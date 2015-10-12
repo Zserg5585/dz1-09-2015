@@ -38,7 +38,7 @@
     margin-bottom: 12px;
     width: 422px;
     height: 58px;
-    border: 1px solid #f97e76;
+    border: 1px solid #48cbe8;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -53,20 +53,25 @@
     margin-bottom: 34px;
     width: 422px;
     height: 58px;
-    border: 1px solid #f97e76;
+    border: 1px solid #48cbe8;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .submit {
     display: block;
     margin-left: 183px;
-    background-color: #48cbe8;
+    background: #48cbe8;
     color: #f6f6f6;
     width: 226px;
     height: 53px;
     font-size: 36px;
     line-height: 51px;
     border-radius: 10px;
+    border: 1px solid #48cbe8;
     padding: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.5);
+}
+.submit:hover {
+    background: #1ab8e8;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.5);
 }

@@ -303,4 +303,27 @@ body {
     clear: both;
 }
 /* Clearfix - end */
-/* Общие классы - конец */
+
+/* Placeholder style */
+/* Color */
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
+/*  Отступы */
+.input::-webkit-input-placeholder       {padding-left: 6px;}
+.input::-moz-placeholder                {padding-left: 6px;}
+.input:-moz-placeholder                 {padding-left: 6px;}
+.input:-ms-input-placeholder            {padding-left: 6px;}
+/* Плавное изменение прозрачности  placeholder-а при фокусе */
+.input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+/* Placeholder style - END */
+
+/* Общие классы - END */
