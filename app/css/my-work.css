@@ -72,7 +72,7 @@
 }
 .preview-text {
     width: 181px;
-    height: 75px;
+    height: 70px;
     font-size: 14px;
     margin: 0;
     overflow: hidden;
@@ -120,7 +120,7 @@
 /* Popup */
 .popup {
     width: 365px;
-    height: 500px;
+    height: 510px;
     background: #eff3f7;
     border-radius: 4px;
     position: relative;
@@ -148,6 +148,20 @@
     color: #eff3f7;
     text-align: center;
     line-height: 20px;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+.popup__close:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 .popup__inner {
     padding: 20px;
@@ -169,7 +183,6 @@
 .form__input-file {
     font-size: 12px;
     line-height: 16px;
-    width: 300px;
     border: 1px solid #67dffa;
     box-shadow: 0 0 1px 1px #67dffa;
     background: #fff;
@@ -193,6 +206,8 @@
     left: 0;
     right: 40px;
     line-height: 42px;
+    padding-left: 10px;
+    color: #67dffa;
 }
 
 .form__input-file-icon {
