@@ -89,7 +89,7 @@
     text-decoration: none;
     border: 1px dashed #3ba8c0;
     border-radius: 4px;
-    background: url(images/add_pj_bg.png);
+    background-image: url(../images/add_pj_bg.png);
     text-align: center;
     position: static;
 }
@@ -120,7 +120,6 @@
 /* Popup */
 .popup {
     width: 365px;
-    height: 510px;
     background: #eff3f7;
     border-radius: 4px;
     position: relative;
@@ -174,7 +173,27 @@
     border: 1px solid #67dffa;
     box-shadow: 0 0 1px 1px #67dffa;
 }
-
+.server-mes {
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 12px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    display: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+.error-mes {
+    color: #bb1604;
+    border-color: #f97a76;
+    background-color: #fad2d1;
+}
+.success-mes {
+    color: #006600;
+    border-color: #137c00;
+    background-color: #4cae54;
+}
 .form__label {
     display: block;
     margin-bottom: 10px;

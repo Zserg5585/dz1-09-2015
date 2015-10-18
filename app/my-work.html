@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="fonts/fira.css"/>
     <!-- bower CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/my-work.css"/>
@@ -118,20 +119,22 @@
                     <div class="form-header">Добавление проекта</div>
                     <a href="#" class="popup__close">x</a>
                     <div class="popup__inner">
-                        <form action="" method="post" class="form">
+                        <form id="add-new-project" action="" role="form" method="POST" class="form">
+                            <div class="server-mes error-mes"></div>
+                            <div class="server-mes success-mes"></div>
                             <label class="form__label">
                                 <div class="form__title">
                                     Название проекта
                                 </div>
-                                <input type="text" name="" class="form__input-text" placeholder="Введите название">
+                                <input type="text" name="name" class="form__input-text" placeholder="Введите название">
                             </label>
                             <label class="form__label">
                                 <div class="form__title">
                                     Картинка проекта
                                 </div>
                                 <div class="form__input-file">
-                                    <input type="file" name="" class="form__input-file-origin">
-                                    <div class="form__input-fake"></div>
+                                    <input type="file" name="fileUrl" class="form__input-file-origin">
+                                    <div name="fileurl" class="form__input-fake"></div>
                                     <div class="form__input-file-icon"></div>
                                 </div>
                             </label>
@@ -139,13 +142,13 @@
                                 <div class="form__title">
                                     URL Проекта
                                 </div>
-                                <input type="text" name="" class="form__input-text" placeholder="Добавьте ссылку">
+                                <input type="text" name="projectUrl" class="form__input-text" placeholder="Добавьте ссылку">
                             </label>
                             <label class="form__label">
                                 <div class="form__title">
                                     Описание
                                 </div>
-                                <textarea name="" class="form__textarea" placeholder="Пара слов о Вашем проекте"></textarea>
+                                <textarea name="text" class="form__textarea" placeholder="Пара слов о Вашем проекте"></textarea>
                             </label>
                             <div class="form__submit--wrap">
                                 <input type="submit" class="form__submit" value="Добавить">
@@ -168,7 +171,9 @@
 
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="bower/bPopup/jquery.bpopup.js"></script>
-<script src="js/placeholder.js"></script>
 <script src="js/main.js"></script>
+<script src="js/add-project.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="add_project.php"></script>
 </body>
 </html>
