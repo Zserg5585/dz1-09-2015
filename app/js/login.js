@@ -8,7 +8,7 @@ var contactMe = (function () {
 
     // Прослушивает события
     var _setUpListners = function () {
-        $('#contact-me').on('submit', _submitForm);
+        $('#login').on('submit', _submitForm);
     };
 
     var _submitForm = function(e) {
@@ -16,10 +16,10 @@ var contactMe = (function () {
         e.preventDefault();
 
         var form = $(this),
-            url = 'contactme.php',
+            url = 'login.php',
             defObj = _ajaxForm(form, url);
 
-            // Что-то будем делать с ответом с сервера defObj
+        // Что-то будем делать с ответом с сервера defObj
     };
 
     var _ajaxForm = function(form, url) {

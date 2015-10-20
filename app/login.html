@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="fonts/fira.css"/>
     <!-- bower CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/login.css"/>
@@ -32,14 +33,14 @@
     <div class="wrapper">
     <div class="main-content">
         <div class="conteiner">
-            <form action="" class="login-form">
+            <form action="" class="login-form" id="login">
                 <div class="form-header">Авторизируйтесь</div>
                 <div class="dec-line"></div>
                 <div class="input-wrap">
                     <lable for="login" class="label-log">Логин</lable>
-                    <input type="text" class="input login" placeholder="Введите логин">
+                    <input type="text" class="input login" placeholder="Введите логин" qtip-content="Вы не ввели логин">
                     <lable for="pass" class="label-pass">Пароль</lable>
-                    <input type="password" class="input pass" placeholder="Введите пароль">
+                    <input type="password" class="input pass" placeholder="Введите пароль" qtip-content="Вы не ввели пароль">
                     <input type="submit" class="submit" value="Войти">
                 </div>
             </form>
@@ -55,7 +56,11 @@
         </div>
     </footer>
 
-    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/jquery/jquery.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
     <script src="js/main.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

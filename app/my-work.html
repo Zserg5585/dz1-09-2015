@@ -37,7 +37,6 @@
                 <a class="header-logo-link" href="">
                     <img class="logo-img" src="images/logo.png" alt="logo">
                     <span class="header-logo-text">Сайт портфолио</span>
-                    </img>
                 </a>
                 <ul class="socials">
                     <li class="socials-item">
@@ -126,7 +125,7 @@
                                 <div class="form__title">
                                     Название проекта
                                 </div>
-                                <input type="text" name="name" class="form__input-text" placeholder="Введите название">
+                                <input type="text" name="name" class="form__input-text" placeholder="Введите название" qtip-content="Вы не ввели название проекта">
                             </label>
                             <label class="form__label">
                                 <div class="form__title">
@@ -142,13 +141,13 @@
                                 <div class="form__title">
                                     URL Проекта
                                 </div>
-                                <input type="text" name="projectUrl" class="form__input-text" placeholder="Добавьте ссылку">
+                                <input type="text" name="projectUrl" class="form__input-text" placeholder="Добавьте ссылку" qtip-content="Вы не ввели ссылку на проект">
                             </label>
                             <label class="form__label">
                                 <div class="form__title">
                                     Описание
                                 </div>
-                                <textarea name="text" class="form__textarea" placeholder="Пара слов о Вашем проекте"></textarea>
+                                <textarea name="text" class="form__textarea" placeholder="Пара слов о Вашем проекте" qtip-content="Вы не ввели сообщение"></textarea>
                             </label>
                             <div class="form__submit--wrap">
                                 <input type="submit" class="form__submit" value="Добавить">
@@ -169,9 +168,11 @@
     </div>
 </footer>
 
-<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/jquery/jquery.js"></script>
+<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 <script src="bower/bPopup/jquery.bpopup.js"></script>
 <script src="js/main.js"></script>
+<script src="js/validation.js"></script>
 <script src="js/add-project.js"></script>
 <script src="bower/qtip2/jquery.qtip.js"></script>
 <script src="add_project.php"></script>

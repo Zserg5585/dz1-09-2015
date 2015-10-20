@@ -24,6 +24,7 @@ var myModule = (function() {
             transition: 'slideDown',
             onClose: function () {
                 form.find('.server-mes').text('').hide();
+                this.find('.form').trigger("reset");
             }
         });
     };
@@ -48,10 +49,10 @@ var myModule = (function() {
         // Объявляем переменные
         var form = $(this),
             url = 'add_project.php',
-            myServerGiveMeAnAnswer = _ajaxForm(form, url);
-
-
-        myServerGiveMeAnAnswer.done(function(ans) {
+            defObj = _ajaxForm(form, url);
+        // Проверяем был ли запрос на сервер?
+        if(defObj) {
+            defObj.done(function(ans) {
 
                 var successBox = form.find('.success-mes'),
                     errorBox = form.find('.error-mes');
@@ -64,7 +65,7 @@ var myModule = (function() {
                     successBox.hide();
                 }
             });
-
+        }
     };
 
     // Универсальная функция
@@ -77,7 +78,7 @@ var myModule = (function() {
     var _ajaxForm = function(form, url) {
 
 
-        //if(!valid) return false;
+        if (!validation.validateForm(form)) return false;
 
         $data = form.serialize();
 

@@ -326,4 +326,11 @@ body {
 .input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 /* Placeholder style - END */
 
+.has-error {
+    background: #F78B83;
+    outline: none;
+}
+input, textarea {
+    outline: none;
+}
 /* Общие классы - END */
