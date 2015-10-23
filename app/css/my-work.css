@@ -80,7 +80,6 @@
 .add-pj-item {
     display: inline-block;
     position: absolute;
-
  }
 .add_pj {
     display: inline-block;
@@ -93,7 +92,6 @@
     text-align: center;
     position: static;
 }
-
 .add_pj:hover {
     border: 1px solid #3ba8c0;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);

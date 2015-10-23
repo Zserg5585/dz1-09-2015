@@ -25,6 +25,8 @@ var myModule = (function() {
             onClose: function () {
                 form.find('.server-mes').text('').hide();
                 this.find('.form').trigger("reset");
+                validation.validateForm(form);
+                form.find('.has-error').removeClass('has-error');
             }
         });
     };

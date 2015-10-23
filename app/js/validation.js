@@ -70,7 +70,7 @@ var validation = (function () {
     var validateForm = function(form) {
 
 
-        var element = form.find('input, textarea').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
+        var element = form.find('input, textarea, .form__input-fake').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
             valid = true;
 
         // Пройдемся по всем елементам формы

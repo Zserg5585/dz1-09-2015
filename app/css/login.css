@@ -17,15 +17,11 @@
     color: #ffffff;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
-}
-.dec-line {
-    height: 15px;
-    background-color: #67dffa;
+    border-bottom: 15px solid #67dffa;
     margin-bottom: 13px;
 }
 .input-wrap {
     height: 348px;
-    
 }
 .label-log {
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -41,11 +37,11 @@
     border: 1px solid #48cbe8;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    line-height: 58px;
 }
 .label-pass {
     font-family: 'fira_sanslight', "Lucida Grande", Lucida, Verdana, sans-serif;
     display: block;
-    margin-bottom: 0px;
     color: #959aa8;
     font-size: 36px;
 }
@@ -56,6 +52,7 @@
     border: 1px solid #48cbe8;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    line-height: 58px;
 }
 .submit {
     display: block;

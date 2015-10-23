@@ -8,7 +8,7 @@ var contactMe = (function () {
 
     // Прослушивает события
     var _setUpListners = function () {
-        $('#login').on('submit', _submitForm);
+        $('#form').on('submit', _submitForm);
     };
 
     var _submitForm = function(e) {
