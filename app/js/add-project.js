@@ -9,13 +9,24 @@ var myModule = (function() {
     var _setUpListners = function() {
         $('.add_pj').on('click', _showModal); //открыть модальное окно
         $('#add-new-project').on('submit', _addProject); //добавление проекта
-
     };
 
     // Работает с модальным окном
     var _showModal = function(e) {
-        console.log('Вызов модального окна');
         e.preventDefault();
+
+        //Fake-input
+        $('.form__input-file-origin').on('change', function(){
+
+            var
+                $this = $(this),
+                value = $this.val(),
+                pureVal = value.replace(/c:\\fakepath\\/gmi, "");
+
+            $('.form__input-fake').text(pureVal).trigger('hideTooltip').removeClass('has-error');
+
+        });
+
         var divPopup = $('.popup');
             form = divPopup.find('.form');
         divPopup.bPopup({
@@ -26,7 +37,8 @@ var myModule = (function() {
                 form.find('.server-mes').text('').hide();
                 this.find('.form').trigger("reset");
                 validation.validateForm(form);
-                form.find('.has-error').removeClass('has-error');
+                form.find('.has-error').removeClass('has-error').trigger('hideTooltip');
+                $('.form__input-fake').text("Загрузите изображение");
             }
         });
     };
@@ -34,19 +46,6 @@ var myModule = (function() {
     // Добавляет проект
     var _addProject = function(e) {
         e.preventDefault();
-        console.log('Добавление проекта');
-
-        //Fake-input
-        $('.form__input-file-origin').on('change', function(){
-
-            var
-                $this = $(this),
-                value = $this.val(),
-                pureVal = value.replace(/c:\\fakepath\\/gmi, "");
-
-            $('.form__input-fake').text(pureVal);
-
-        });
 
         // Объявляем переменные
         var form = $(this),

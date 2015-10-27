@@ -9,16 +9,16 @@ var validation = (function () {
     // Прослушивает события
     var _setUpListners = function () {
         $('form').on('keydown', '.has-error', _removeError);
-        $('form').on('reset', _clearForm)
+        $('form').on('reset', clearForm);
     };
 
     var _removeError = function() {
         $(this).removeClass('has-error');
     };
 
-    var _clearForm = function(form) {
+    var clearForm = function(form) {
         var form = $(this);
-        form.find('.input, .textarea').trigger('hideTooltip');
+        form.find('.input, .textarea, .form__input-fake').trigger('hideTooltip');
         form.find('.has-error').removeClass('has-error');
     };
 
@@ -70,7 +70,7 @@ var validation = (function () {
     var validateForm = function(form) {
 
 
-        var element = form.find('input, textarea, .form__input-fake').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
+        var element = form.find('input, textarea, .form__input-file-origin').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
             valid = true;
 
         // Пройдемся по всем елементам формы
@@ -93,7 +93,8 @@ var validation = (function () {
     // Возвращаем объект (публичные методы)
     return {
         init: init,
-        validateForm: validateForm
+        validateForm: validateForm,
+        clearForm: clearForm
     };
 
 })();
